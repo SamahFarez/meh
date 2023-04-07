@@ -39,12 +39,12 @@ body {
 
     .container {
         padding: 20px 10vw;
-        height: 80vh !important;
+        height: 80vw !important;
 
     }
     
     .question{
-            font-size: 5vw !important;
+            font-size: 4.5vw !important;
 
     }
 
@@ -52,6 +52,7 @@ body {
     .select {
         border: 1px solid #293B8F;
         margin-bottom: 0 !important; 
+        font-size : 3.5vw !important;
 
     }
 
