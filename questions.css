@@ -55,16 +55,17 @@ body {
         font-size : 3.5vw !important;
         height:10vw !important;
         padding: 1vw 3vw !important;
-        margin-bottom: 10vw !important;
+        margin-bottom: 5vw !important;
 
     }
     
     .textarea{
-        margin-bottom: 10vw !important;
+        margin-bottom: 5vw !important;
 
     }
     
     .button{
+        margin-bottom: 5vw !important;
         font-size : 3vw !important;
 
     }
