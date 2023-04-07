@@ -52,8 +52,9 @@ body {
     .select {
         border: 1px solid #293B8F;
         margin-bottom: 0 !important; 
-        font-size : 4vw !important;
+        font-size : 3.5vw !important;
         height:10vw !important;
+        padding: 1vw 2vw !important;
 
     }
 
