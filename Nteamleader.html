@@ -17,22 +17,10 @@
 
     <script>
 
-        let clicked = false;
-  
-        const myButton = document.getElementById('button');
-        
-        if (myButton) {
-          myButton.addEventListener('click', function(event) {
-            clicked = true;
-          });
-        }
-        
-
-
         var input = document.getElementById("input");
         input.addEventListener("keyup", function (event) {
             // Number 13 is the "Enter" key on the keyboard
-            if (event.keyCode === 13 || clicked === true) {
+            if (event.keyCode === 13) {
                 if (input.checkValidity() === false) {
                     input.reportValidity();
                 } else {
@@ -40,6 +28,19 @@
                 }
             }
         });
+
+        let clicked = false;
+        const myButton = document.getElementById('button');
+        var input = document.getElementById("input");
+
+        myButton.addEventListener('click', function (event) {
+            if (input.checkValidity() === false) {
+                input.reportValidity();
+            } else {
+                window.location.href = "question8.html";
+            }
+        });
+
     </script>
 </body>
 </html>

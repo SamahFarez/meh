@@ -15,8 +15,8 @@
         <p class="question">Q13.Please provide a brief motivation letter:</p>
         <p class="label">Around (max 300 words) explaining your interest in participating in AiFest and what skills or
             experience you can contribute to a team:</p>
-        <textarea class="textarea" id="textarea" placeholder="Your text here" required minlength="10"></textarea>
-        <button id="button" type="submit" class="button next" onclick="location.href = 'question14.html'">Next</button>
+        <textarea class="textarea" id="textarea" placeholder="Your text here" required minlength="300"></textarea>
+        <button id="button" type="submit" class="button next">Next</button>
     </div>
 
 
@@ -37,7 +37,7 @@
                 myTextarea.reportValidity();
             } else {
                 const words = myTextarea.value.split(' ');
-                const numWords = words.filter(word => word.trim() !== '').length;
+                const numWords = myTextarea.value.split(' ').length                
                 if (numWords < 200) {
                     event.preventDefault();
                 } else {
