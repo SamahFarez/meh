@@ -39,7 +39,7 @@ body {
 
     .container {
         padding: 10vw 8vw;
-        height: 50vw !important;
+        min-height: 50vw !important;
 
     }
     
