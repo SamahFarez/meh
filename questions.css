@@ -59,9 +59,13 @@ body {
 
     }
     
+    .textarea{
+        margin-bottom: 10vw !important;
+
+    }
+    
     .button{
         font-size : 3vw !important;
-        margin-top: 10vw !important;
 
     }
 
