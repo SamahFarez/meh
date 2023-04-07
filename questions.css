@@ -94,6 +94,11 @@ body {
         height: 2px !important;
       } 
     
+    .label{
+        font-size: 3vw !important;
+
+    }
+    
 
 
 }
