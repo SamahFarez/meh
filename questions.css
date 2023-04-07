@@ -94,7 +94,7 @@ body {
         height: 2px !important;
       } 
     
-    label{
+    label, .label{
         font-size: 3.5vw !important;
 
     }
