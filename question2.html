@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="question">Q2.Professional email address*:</p>
+        <input class="input" id="input" name="FullName" type="email" placeholder="Your email address" required />
+        <button id="button" type="submit" class="button next" >Next</button>
+    </div>
+
+    <script>
+
+        var input = document.getElementById("input");
+        input.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                if (input.checkValidity() === false) {
+                    input.reportValidity();
+                } else {
+                    window.location.href = "question3.html";
+                }
+            }
+        });
+
+        let clicked = false;
+        const myButton = document.getElementById('button');
+        var input = document.getElementById("input");
+
+        myButton.addEventListener('click', function (event) {
+            if (input.checkValidity() === false) {
+                input.reportValidity();
+            } else {
+                window.location.href = "question3.html";
+            }
+        });
+
+
+    </script>
+    
+</body>
+
+</html>

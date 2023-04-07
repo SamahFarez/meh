@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="question">Q13.Please provide a brief motivation letter:</p>
+        <p class="label">Around (max 300 words) explaining your interest in participating in AiFest and what skills or
+            experience you can contribute to a team:</p>
+        <textarea class="textarea" id="textarea" placeholder="Your text here" required minlength="10"></textarea>
+        <button id="button" type="submit" class="button next" onclick="location.href = 'question14.html'">Next</button>
+    </div>
+
+
+    <script>
+        window.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                window.location.href = "question14.html";
+
+            }
+        });
+
+        const myTextarea = document.getElementById('textarea');
+        const myButton = document.getElementById('button');
+        let clicked = false;
+        myButton.addEventListener('click', function (event) {
+            if (myTextarea.checkValidity() === false) {
+                myTextarea.reportValidity();
+            } else {
+                const words = myTextarea.value.split(' ');
+                const numWords = words.filter(word => word.trim() !== '').length;
+                if (numWords < 200) {
+                    event.preventDefault();
+                } else {
+                    window.location.href = "question14.html";
+
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

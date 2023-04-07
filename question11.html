@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="question">Q11.How familiar are you with machine learning? </p>
+        <p class="label">[Beginner/Intermediate/Advanced] or a scale from 1 to 5 :</p>
+        <input class="rate" type="range" id="rate" name="rate" min="1" max="5" value="2" oninput="updateProgressBar()">
+        <button  type="submit" class="button next" onclick="location.href = 'question12.html'" >Next</button>
+    </div>
+
+    <script>
+
+        window.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                    window.location.href = "question12.html";
+                
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

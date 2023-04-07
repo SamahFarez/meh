@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <p class="question">Here is your team code :</p>
+        <p class="code question">3 6 4 2</p>
+        <label style="display: block;"><b>Note:</b> Share this code with your team members so that they can proceed with the registrations</label>
+        <button type="submit" id="button" class="button next" onclick ="location.href='question8.html'" >Next</button>
+    </div>
+
+    <script>
+
+        
+        var input = document.getElementById("input");
+        window.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                    window.location.href = "teamName.html";
+            
+            }
+        });
+    </script>
+
+</body>
+
+</html>

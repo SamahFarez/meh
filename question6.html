@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="question">Q6.Year of study*:</p>
+        <label>Please choose your level ( 1CP, 2CP )</label>
+        <select class="select" id="cars" name="cars" style="margin-right: 20px">
+            <option value="" selected>Choose</option>
+            <option value="1CP">1CP</option>
+            <option value="2CP">2CP</option>
+        </select>
+        <button id="button" type="submit" class="button next" onclick="location.href='question7.html'">Next</button>
+    </div>
+
+    <script>
+
+        window.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                window.location.href = "question6.html";
+
+            }
+        });
+
+    </script>
+</body>
+
+</html>
