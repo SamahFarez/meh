@@ -58,12 +58,15 @@ body {
 
     }
     
-    .textarea{
+    .button{
         font-size : 3vw !important;
+        padding-top: 20px !important;
+
     }
 
     .select{
         padding-top: 3px !important;
+        
     }
 
     .button{
