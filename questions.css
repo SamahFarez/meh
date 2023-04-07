@@ -57,6 +57,10 @@ body {
         padding: 1vw 2vw !important;
 
     }
+    
+    .textarea{
+        font-size : 3vw !important;
+    }
 
     .select{
         padding-top: 3px !important;
